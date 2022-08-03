@@ -7,7 +7,7 @@ updateButton.addEventListener("click", () => {
     method: "put",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      name: "Dean",
+      name: "Dean Learner / Thornton Reed",
       quote: "I'd prefer a beer!"
     })
   })
@@ -16,7 +16,7 @@ updateButton.addEventListener("click", () => {
         return res.json();
       }
     })
-    .then (response => {
+    .then(res => {
       window.location.reload(true);
     });
 });
@@ -26,7 +26,7 @@ deleteButton.addEventListener("click", () => {
     method: "delete",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      name: "Dean"
+      name: "Dean Learner / Thornton Reed"
     })
   })
     .then(res => {
@@ -34,8 +34,8 @@ deleteButton.addEventListener("click", () => {
         return res.json();
       }
     })
-    .then(response => {
-      if (response === "No quotes to delete!") {
+    .then(res => {
+      if (res === "No quotes to delete!") {
         messageDiv.textContent = "No Dean quotes to delete!";
       }
       else {
