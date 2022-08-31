@@ -1,7 +1,7 @@
 {
   "name": "darkplace-crud",
   "version": "1.0.0",
-  "description": "",
+  "description": "Blood? No, an app which showcases memorable quotations from Garth Marenghi's Darkplace!",
   "main": "server.js",
   "scripts": {
     "dev": "nodemon server.js",
